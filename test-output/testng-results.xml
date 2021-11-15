@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="1" total="15" passed="11" failed="3" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-11-13T07:38:55 CST" name="My cart Test Automation regressing suite" finished-at="2021-11-13T07:39:34 CST" duration-ms="39345">
+    <groups>
+    </groups>
+    <test started-at="2021-11-13T07:38:55 CST" name="LoginPage Test" finished-at="2021-11-13T07:39:10 CST" duration-ms="14872">
+      <class name="com.qa.hubspot.tests.LoginPageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.hubspot.tests.LoginPageTest@3f6db3fb]" started-at="2021-11-13T07:38:55 CST" name="setUp" finished-at="2021-11-13T07:39:06 CST" duration-ms="11235" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyLoginPageTitleTest()[pri:1, instance:com.qa.hubspot.tests.LoginPageTest@3f6db3fb]" started-at="2021-11-13T07:39:07 CST" name="verifyLoginPageTitleTest" finished-at="2021-11-13T07:39:07 CST" duration-ms="559" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginPageTitleTest -->
+        <test-method signature="verifyForgorPasswordLinkTest()[pri:2, instance:com.qa.hubspot.tests.LoginPageTest@3f6db3fb]" started-at="2021-11-13T07:39:07 CST" name="verifyForgorPasswordLinkTest" finished-at="2021-11-13T07:39:08 CST" duration-ms="210" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyForgorPasswordLinkTest -->
+        <test-method signature="loginTest()[pri:3, instance:com.qa.hubspot.tests.LoginPageTest@3f6db3fb]" started-at="2021-11-13T07:39:08 CST" name="loginTest" finished-at="2021-11-13T07:39:09 CST" duration-ms="1363" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.hubspot.tests.LoginPageTest@3f6db3fb]" started-at="2021-11-13T07:39:09 CST" name="tearDown" finished-at="2021-11-13T07:39:10 CST" duration-ms="797" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.qa.hubspot.tests.LoginPageTest -->
+    </test> <!-- LoginPage Test -->
+    <test started-at="2021-11-13T07:38:55 CST" name="AccountsPage Test" finished-at="2021-11-13T07:39:17 CST" duration-ms="21548">
+      <class name="com.qa.hubspot.tests.AccountsPageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.hubspot.tests.AccountsPageTest@6475472c]" started-at="2021-11-13T07:38:55 CST" name="setUp" finished-at="2021-11-13T07:39:07 CST" duration-ms="11652" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="accountsPageSetUp()[pri:0, instance:com.qa.hubspot.tests.AccountsPageTest@6475472c]" started-at="2021-11-13T07:39:07 CST" name="accountsPageSetUp" finished-at="2021-11-13T07:39:09 CST" duration-ms="1900" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- accountsPageSetUp -->
+        <test-method signature="accountsPageTitleTest()[pri:1, instance:com.qa.hubspot.tests.AccountsPageTest@6475472c]" started-at="2021-11-13T07:39:09 CST" name="accountsPageTitleTest" finished-at="2021-11-13T07:39:09 CST" duration-ms="25" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- accountsPageTitleTest -->
+        <test-method is-config="true" signature="accountsPageSetUp()[pri:0, instance:com.qa.hubspot.tests.AccountsPageTest@6475472c]" started-at="2021-11-13T07:39:09 CST" name="accountsPageSetUp" finished-at="2021-11-13T07:39:10 CST" duration-ms="954" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- accountsPageSetUp -->
+        <test-method signature="verifyAccountsPageHeaderTest()[pri:2, instance:com.qa.hubspot.tests.AccountsPageTest@6475472c]" started-at="2021-11-13T07:39:10 CST" name="verifyAccountsPageHeaderTest" finished-at="2021-11-13T07:39:10 CST" duration-ms="149" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAccountsPageHeaderTest -->
+        <test-method is-config="true" signature="accountsPageSetUp()[pri:0, instance:com.qa.hubspot.tests.AccountsPageTest@6475472c]" started-at="2021-11-13T07:39:10 CST" name="accountsPageSetUp" finished-at="2021-11-13T07:39:11 CST" duration-ms="1180" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- accountsPageSetUp -->
+        <test-method signature="verifyMyAccountSectionTest()[pri:3, instance:com.qa.hubspot.tests.AccountsPageTest@6475472c]" started-at="2021-11-13T07:39:11 CST" name="verifyMyAccountSectionTest" finished-at="2021-11-13T07:39:11 CST" duration-ms="52" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertTrue(Assert.java:45)
+at org.testng.Assert.assertTrue(Assert.java:55)
+at com.qa.hubspot.tests.AccountsPageTest.verifyMyAccountSectionTest(AccountsPageTest.java:41)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:425)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:66)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+at java.base/java.lang.Thread.run(Thread.java:834)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyMyAccountSectionTest -->
+        <test-method is-config="true" signature="accountsPageSetUp()[pri:0, instance:com.qa.hubspot.tests.AccountsPageTest@6475472c]" started-at="2021-11-13T07:39:11 CST" name="accountsPageSetUp" finished-at="2021-11-13T07:39:12 CST" duration-ms="1509" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- accountsPageSetUp -->
+        <test-method signature="verifyMyAccountSectionListTest()[pri:4, instance:com.qa.hubspot.tests.AccountsPageTest@6475472c]" started-at="2021-11-13T07:39:12 CST" name="verifyMyAccountSectionListTest" finished-at="2021-11-13T07:39:13 CST" duration-ms="60" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[lists don't have the same size expected [4] but found [0]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: lists don't have the same size expected [4] but found [0]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:907)
+at org.testng.Assert.assertEquals(Assert.java:1089)
+at org.testng.Assert.assertEquals(Assert.java:1065)
+at com.qa.hubspot.tests.AccountsPageTest.verifyMyAccountSectionListTest(AccountsPageTest.java:47)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:425)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:66)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+at java.base/java.lang.Thread.run(Thread.java:834)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyMyAccountSectionListTest -->
+        <test-method is-config="true" signature="accountsPageSetUp()[pri:0, instance:com.qa.hubspot.tests.AccountsPageTest@6475472c]" started-at="2021-11-13T07:39:13 CST" name="accountsPageSetUp" finished-at="2021-11-13T07:39:14 CST" duration-ms="1264" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- accountsPageSetUp -->
+        <test-method signature="searchTest()[pri:5, instance:com.qa.hubspot.tests.AccountsPageTest@6475472c]" started-at="2021-11-13T07:39:14 CST" name="searchTest" finished-at="2021-11-13T07:39:15 CST" duration-ms="951" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.hubspot.tests.AccountsPageTest@6475472c]" started-at="2021-11-13T07:39:15 CST" name="tearDown" finished-at="2021-11-13T07:39:17 CST" duration-ms="1753" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.qa.hubspot.tests.AccountsPageTest -->
+    </test> <!-- AccountsPage Test -->
+    <test started-at="2021-11-13T07:39:10 CST" name="RegistrationPage Test" finished-at="2021-11-13T07:39:26 CST" duration-ms="16091">
+      <class name="com.qa.hubspot.tests.RegisterPageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.hubspot.tests.RegisterPageTest@758a34ce]" started-at="2021-11-13T07:39:10 CST" name="setUp" finished-at="2021-11-13T07:39:15 CST" duration-ms="4663" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="registerPageSetUp()[pri:0, instance:com.qa.hubspot.tests.RegisterPageTest@758a34ce]" started-at="2021-11-13T07:39:15 CST" name="registerPageSetUp" finished-at="2021-11-13T07:39:15 CST" duration-ms="686" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registerPageSetUp -->
+        <test-method signature="userRegistrationTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qa.hubspot.tests.RegisterPageTest@758a34ce]" started-at="2021-11-13T07:39:17 CST" name="userRegistrationTest" data-provider="getRegisterData" finished-at="2021-11-13T07:39:20 CST" duration-ms="3274" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[devendra]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[pawar]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[dev@gmail.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[1.23456789E9]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[dev@123]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[yes]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userRegistrationTest -->
+        <test-method signature="userRegistrationTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qa.hubspot.tests.RegisterPageTest@758a34ce]" started-at="2021-11-13T07:39:20 CST" name="userRegistrationTest" data-provider="getRegisterData" finished-at="2021-11-13T07:39:23 CST" duration-ms="2190" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[nagendra]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[ragav]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[nag@gmail.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[2.345678901E9]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[nag@@234]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[no]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userRegistrationTest -->
+        <test-method signature="userRegistrationTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qa.hubspot.tests.RegisterPageTest@758a34ce]" started-at="2021-11-13T07:39:23 CST" name="userRegistrationTest" data-provider="getRegisterData" finished-at="2021-11-13T07:39:24 CST" duration-ms="1189" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[mittal]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[pal]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[mit@gmail.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[9.861023456E9]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[mit@12]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[yes]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userRegistrationTest -->
+        <test-method signature="userRegistrationTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qa.hubspot.tests.RegisterPageTest@758a34ce]" started-at="2021-11-13T07:39:24 CST" name="userRegistrationTest" data-provider="getRegisterData" finished-at="2021-11-13T07:39:25 CST" duration-ms="944" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[lipi]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[misra]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[lipi@gmail.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[1.23456678E8]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[l123]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[no]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userRegistrationTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.hubspot.tests.RegisterPageTest@758a34ce]" started-at="2021-11-13T07:39:25 CST" name="tearDown" finished-at="2021-11-13T07:39:26 CST" duration-ms="1237" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.qa.hubspot.tests.RegisterPageTest -->
+    </test> <!-- RegistrationPage Test -->
+    <test started-at="2021-11-13T07:39:17 CST" name="ProductInfoPage Test" finished-at="2021-11-13T07:39:34 CST" duration-ms="17729">
+      <class name="com.qa.hubspot.tests.ProductInfoTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.hubspot.tests.ProductInfoTest@5c42d2b7]" started-at="2021-11-13T07:39:17 CST" name="setUp" finished-at="2021-11-13T07:39:21 CST" duration-ms="4754" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="productInfoSetUp()[pri:0, instance:com.qa.hubspot.tests.ProductInfoTest@5c42d2b7]" started-at="2021-11-13T07:39:21 CST" name="productInfoSetUp" finished-at="2021-11-13T07:39:22 CST" duration-ms="1096" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- productInfoSetUp -->
+        <test-method signature="verifyProductInfoTest_iMac()[pri:1, instance:com.qa.hubspot.tests.ProductInfoTest@5c42d2b7]" started-at="2021-11-13T07:39:22 CST" name="verifyProductInfoTest_iMac" finished-at="2021-11-13T07:39:33 CST" duration-ms="10145" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyProductInfoTest_iMac -->
+        <test-method signature="productInfoPageTitleTest_iMac()[pri:2, instance:com.qa.hubspot.tests.ProductInfoTest@5c42d2b7]" started-at="2021-11-13T07:39:33 CST" name="productInfoPageTitleTest_iMac" finished-at="2021-11-13T07:39:33 CST" duration-ms="672" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [iMac] but found [Search - iMaciMac]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [iMac] but found [Search - iMaciMac]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:629)
+at org.testng.Assert.assertEquals(Assert.java:639)
+at com.qa.hubspot.tests.ProductInfoTest.productInfoPageTitleTest_iMac(ProductInfoTest.java:26)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:425)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:66)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+at java.base/java.lang.Thread.run(Thread.java:834)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- productInfoPageTitleTest_iMac -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.hubspot.tests.ProductInfoTest@5c42d2b7]" started-at="2021-11-13T07:39:33 CST" name="tearDown" finished-at="2021-11-13T07:39:34 CST" duration-ms="1017" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.qa.hubspot.tests.ProductInfoTest -->
+    </test> <!-- ProductInfoPage Test -->
+  </suite> <!-- My cart Test Automation regressing suite -->
+</testng-results>

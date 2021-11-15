@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="My cart Test Automation regressing suite" parallel="tests" thread-count="2">
+  <!-- listeners>
+		<listener class-name="com.qa.hubspot.testListners.ExtentReportListener" />
+	</listeners>
+	 -->
+	<test name= "LoginPage Test">
+	
+		<classes>
+			<class name="com.qa.hubspot.tests.LoginPageTest" />			
+		</classes>
+	</test>
+
+
+	<test name= "AccountsPage Test">
+		<classes>
+			<class name="com.qa.hubspot.tests.AccountsPageTest" />			
+		</classes>
+	</test>
+	
+	<test name= "RegistrationPage Test">
+		<classes>
+			<class name="com.qa.hubspot.tests.RegisterPageTest" />			
+		</classes>
+	</test>
+	
+	<test name= "ProductInfoPage Test">
+		<classes>
+			<class name="com.qa.hubspot.tests.ProductInfoTest" />			
+		</classes>
+	</test>
+	
+
+	</suite>

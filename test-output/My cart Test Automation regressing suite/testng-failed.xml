@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="tests" name="Failed suite [My cart Test Automation regressing suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="2" parallel="tests" name="AccountsPage Test(failed)">
+    <classes>
+      <class name="com.qa.hubspot.tests.AccountsPageTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="accountsPageSetUp"/>
+          <include name="verifyMyAccountSectionListTest"/>
+          <include name="tearDown"/>
+          <include name="verifyMyAccountSectionTest"/>
+        </methods>
+      </class> <!-- com.qa.hubspot.tests.AccountsPageTest -->
+    </classes>
+  </test> <!-- AccountsPage Test(failed) -->
+  <test thread-count="2" parallel="tests" name="ProductInfoPage Test(failed)">
+    <classes>
+      <class name="com.qa.hubspot.tests.ProductInfoTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="productInfoSetUp"/>
+          <include name="productInfoPageTitleTest_iMac"/>
+        </methods>
+      </class> <!-- com.qa.hubspot.tests.ProductInfoTest -->
+    </classes>
+  </test> <!-- ProductInfoPage Test(failed) -->
+</suite> <!-- Failed suite [My cart Test Automation regressing suite] -->

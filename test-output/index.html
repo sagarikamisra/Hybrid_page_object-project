@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-My_cart_Test_Automation_regressing_suite" class="navigator-link">
+              <span class="suite-name border-failed">My cart Test Automation regressing suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-My_cart_Test_Automation_regressing_suite" class="navigator-link ">
+                    <span>C:\Users\sagar\eclipse-workspacee\Hybrid_Pom_Project\src\test\resources\testRunners\testng_regression.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-My_cart_Test_Automation_regressing_suite" class="navigator-link ">
+                    <span class="test-stats">4 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-My_cart_Test_Automation_regressing_suite" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-My_cart_Test_Automation_regressing_suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-My_cart_Test_Automation_regressing_suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-My_cart_Test_Automation_regressing_suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-My_cart_Test_Automation_regressing_suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">14 methods, 3 failed,   11 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-My_cart_Test_Automation_regressing_suite" class="hide-methods failed suite-My_cart_Test_Automation_regressing_suite"> (hide)</a> <!-- hide-methods failed suite-My_cart_Test_Automation_regressing_suite -->
+                      <a href="#" panel-name="suite-My_cart_Test_Automation_regressing_suite" class="show-methods failed suite-My_cart_Test_Automation_regressing_suite"> (show)</a> <!-- show-methods failed suite-My_cart_Test_Automation_regressing_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-My_cart_Test_Automation_regressing_suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-My_cart_Test_Automation_regressing_suite" title="com.qa.hubspot.tests.ProductInfoTest" class="method navigator-link" hash-for-method="productInfoPageTitleTest_iMac">productInfoPageTitleTest_iMac</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-My_cart_Test_Automation_regressing_suite" title="com.qa.hubspot.tests.AccountsPageTest" class="method navigator-link" hash-for-method="verifyMyAccountSectionListTest">verifyMyAccountSectionListTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-My_cart_Test_Automation_regressing_suite" title="com.qa.hubspot.tests.AccountsPageTest" class="method navigator-link" hash-for-method="verifyMyAccountSectionTest">verifyMyAccountSectionTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-My_cart_Test_Automation_regressing_suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-My_cart_Test_Automation_regressing_suite" class="hide-methods passed suite-My_cart_Test_Automation_regressing_suite"> (hide)</a> <!-- hide-methods passed suite-My_cart_Test_Automation_regressing_suite -->
+                      <a href="#" panel-name="suite-My_cart_Test_Automation_regressing_suite" class="show-methods passed suite-My_cart_Test_Automation_regressing_suite"> (show)</a> <!-- show-methods passed suite-My_cart_Test_Automation_regressing_suite -->
+                    </span>
+                    <div class="method-list-content passed suite-My_cart_Test_Automation_regressing_suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-My_cart_Test_Automation_regressing_suite" title="com.qa.hubspot.tests.AccountsPageTest" class="method navigator-link" hash-for-method="accountsPageTitleTest">accountsPageTitleTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-My_cart_Test_Automation_regressing_suite" title="com.qa.hubspot.tests.LoginPageTest" class="method navigator-link" hash-for-method="loginTest">loginTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-My_cart_Test_Automation_regressing_suite" title="com.qa.hubspot.tests.AccountsPageTest" class="method navigator-link" hash-for-method="searchTest">searchTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-My_cart_Test_Automation_regressing_suite" title="com.qa.hubspot.tests.RegisterPageTest" class="method navigator-link" hash-for-method="userRegistrationTest(devendra, pawar, dev@gmail.com, 1.23456789E9, dev@123, yes)">userRegistrationTest(devendra, pawar, dev@gmail.com, 1.23456789E9, dev@123, yes)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-My_cart_Test_Automation_regressing_suite" title="com.qa.hubspot.tests.RegisterPageTest" class="method navigator-link" hash-for-method="userRegistrationTest(lipi, misra, lipi@gmail.com, 1.23456678E8, l123, no)">userRegistrationTest(lipi, misra, lipi@gmail.com, 1.23456678E8, l123, no)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-My_cart_Test_Automation_regressing_suite" title="com.qa.hubspot.tests.RegisterPageTest" class="method navigator-link" hash-for-method="userRegistrationTest(mittal, pal, mit@gmail.com, 9.861023456E9, mit@12, yes)">userRegistrationTest(mittal, pal, mit@gmail.com, 9.861023456E9, mit@12, yes)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-My_cart_Test_Automation_regressing_suite" title="com.qa.hubspot.tests.RegisterPageTest" class="method navigator-link" hash-for-method="userRegistrationTest(nagendra, ragav, nag@gmail.com, 2.345678901E9, nag@@234, no)">userRegistrationTest(nagendra, ragav, nag@gmail.com, 2.345678901E9, nag@@234, no)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-My_cart_Test_Automation_regressing_suite" title="com.qa.hubspot.tests.AccountsPageTest" class="method navigator-link" hash-for-method="verifyAccountsPageHeaderTest">verifyAccountsPageHeaderTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-My_cart_Test_Automation_regressing_suite" title="com.qa.hubspot.tests.LoginPageTest" class="method navigator-link" hash-for-method="verifyForgorPasswordLinkTest">verifyForgorPasswordLinkTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-My_cart_Test_Automation_regressing_suite" title="com.qa.hubspot.tests.LoginPageTest" class="method navigator-link" hash-for-method="verifyLoginPageTitleTest">verifyLoginPageTitleTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-My_cart_Test_Automation_regressing_suite" title="com.qa.hubspot.tests.ProductInfoTest" class="method navigator-link" hash-for-method="verifyProductInfoTest_iMac">verifyProductInfoTest_iMac</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-My_cart_Test_Automation_regressing_suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-My_cart_Test_Automation_regressing_suite" class="panel My_cart_Test_Automation_regressing_suite">
+          <div class="suite-My_cart_Test_Automation_regressing_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.qa.hubspot.tests.ProductInfoTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="productInfoPageTitleTest_iMac">
+                  </a> <!-- productInfoPageTitleTest_iMac -->
+                  <span class="method-name">productInfoPageTitleTest_iMac</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [iMac] but found [Search - iMaciMac]
+	at com.qa.hubspot.tests.ProductInfoTest.productInfoPageTitleTest_iMac(ProductInfoTest.java:26)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+... Removed 24 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-My_cart_Test_Automation_regressing_suite-class-failed -->
+          <div class="suite-My_cart_Test_Automation_regressing_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.qa.hubspot.tests.AccountsPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyMyAccountSectionListTest">
+                  </a> <!-- verifyMyAccountSectionListTest -->
+                  <span class="method-name">verifyMyAccountSectionListTest</span>
+                  <div class="stack-trace">java.lang.AssertionError: lists don&apos;t have the same size expected [4] but found [0]
+	at com.qa.hubspot.tests.AccountsPageTest.verifyMyAccountSectionListTest(AccountsPageTest.java:47)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyMyAccountSectionTest">
+                  </a> <!-- verifyMyAccountSectionTest -->
+                  <span class="method-name">verifyMyAccountSectionTest</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at com.qa.hubspot.tests.AccountsPageTest.verifyMyAccountSectionTest(AccountsPageTest.java:41)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+... Removed 22 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-My_cart_Test_Automation_regressing_suite-class-failed -->
+          <div class="suite-My_cart_Test_Automation_regressing_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.qa.hubspot.tests.LoginPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginTest">
+                  </a> <!-- loginTest -->
+                  <span class="method-name">loginTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyForgorPasswordLinkTest">
+                  </a> <!-- verifyForgorPasswordLinkTest -->
+                  <span class="method-name">verifyForgorPasswordLinkTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLoginPageTitleTest">
+                  </a> <!-- verifyLoginPageTitleTest -->
+                  <span class="method-name">verifyLoginPageTitleTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-My_cart_Test_Automation_regressing_suite-class-passed -->
+          <div class="suite-My_cart_Test_Automation_regressing_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.qa.hubspot.tests.ProductInfoTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyProductInfoTest_iMac">
+                  </a> <!-- verifyProductInfoTest_iMac -->
+                  <span class="method-name">verifyProductInfoTest_iMac</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-My_cart_Test_Automation_regressing_suite-class-passed -->
+          <div class="suite-My_cart_Test_Automation_regressing_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.qa.hubspot.tests.AccountsPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="accountsPageTitleTest">
+                  </a> <!-- accountsPageTitleTest -->
+                  <span class="method-name">accountsPageTitleTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="searchTest">
+                  </a> <!-- searchTest -->
+                  <span class="method-name">searchTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyAccountsPageHeaderTest">
+                  </a> <!-- verifyAccountsPageHeaderTest -->
+                  <span class="method-name">verifyAccountsPageHeaderTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-My_cart_Test_Automation_regressing_suite-class-passed -->
+          <div class="suite-My_cart_Test_Automation_regressing_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.qa.hubspot.tests.RegisterPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="userRegistrationTest(devendra, pawar, dev@gmail.com, 1.23456789E9, dev@123, yes)">
+                  </a> <!-- userRegistrationTest(devendra, pawar, dev@gmail.com, 1.23456789E9, dev@123, yes) -->
+                  <span class="method-name">userRegistrationTest</span>
+                  <span class="parameters">(devendra, pawar, dev@gmail.com, 1.23456789E9, dev@123, yes)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="userRegistrationTest(lipi, misra, lipi@gmail.com, 1.23456678E8, l123, no)">
+                  </a> <!-- userRegistrationTest(lipi, misra, lipi@gmail.com, 1.23456678E8, l123, no) -->
+                  <span class="method-name">userRegistrationTest</span>
+                  <span class="parameters">(lipi, misra, lipi@gmail.com, 1.23456678E8, l123, no)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="userRegistrationTest(mittal, pal, mit@gmail.com, 9.861023456E9, mit@12, yes)">
+                  </a> <!-- userRegistrationTest(mittal, pal, mit@gmail.com, 9.861023456E9, mit@12, yes) -->
+                  <span class="method-name">userRegistrationTest</span>
+                  <span class="parameters">(mittal, pal, mit@gmail.com, 9.861023456E9, mit@12, yes)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="userRegistrationTest(nagendra, ragav, nag@gmail.com, 2.345678901E9, nag@@234, no)">
+                  </a> <!-- userRegistrationTest(nagendra, ragav, nag@gmail.com, 2.345678901E9, nag@@234, no) -->
+                  <span class="method-name">userRegistrationTest</span>
+                  <span class="parameters">(nagendra, ragav, nag@gmail.com, 2.345678901E9, nag@@234, no)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-My_cart_Test_Automation_regressing_suite-class-passed -->
+        </div> <!-- panel My_cart_Test_Automation_regressing_suite -->
+        <div panel-name="test-xml-My_cart_Test_Automation_regressing_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\sagar\eclipse-workspacee\Hybrid_Pom_Project\src\test\resources\testRunners\testng_regression.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite thread-count=&quot;2&quot; parallel=&quot;tests&quot; name=&quot;My cart Test Automation regressing suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;test thread-count=&quot;2&quot; parallel=&quot;tests&quot; name=&quot;LoginPage Test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.qa.hubspot.tests.LoginPageTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- LoginPage Test --&gt;
+  &lt;test thread-count=&quot;2&quot; parallel=&quot;tests&quot; name=&quot;AccountsPage Test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.qa.hubspot.tests.AccountsPageTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- AccountsPage Test --&gt;
+  &lt;test thread-count=&quot;2&quot; parallel=&quot;tests&quot; name=&quot;RegistrationPage Test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.qa.hubspot.tests.RegisterPageTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- RegistrationPage Test --&gt;
+  &lt;test thread-count=&quot;2&quot; parallel=&quot;tests&quot; name=&quot;ProductInfoPage Test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.qa.hubspot.tests.ProductInfoTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- ProductInfoPage Test --&gt;
+&lt;/suite&gt; &lt;!-- My cart Test Automation regressing suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-My_cart_Test_Automation_regressing_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for My cart Test Automation regressing suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">LoginPage Test (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">AccountsPage Test (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">RegistrationPage Test (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">ProductInfoPage Test (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-My_cart_Test_Automation_regressing_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for My cart Test Automation regressing suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-My_cart_Test_Automation_regressing_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for My cart Test Automation regressing suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_My_cart_Test_Automation_regressing_suite');
+function tableData_My_cart_Test_Automation_regressing_suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(14);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'verifyProductInfoTest_iMac')
+data.setCell(0, 2, 'com.qa.hubspot.tests.ProductInfoTest')
+data.setCell(0, 3, 10145);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'userRegistrationTest')
+data.setCell(1, 2, 'com.qa.hubspot.tests.RegisterPageTest')
+data.setCell(1, 3, 3274);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'userRegistrationTest')
+data.setCell(2, 2, 'com.qa.hubspot.tests.RegisterPageTest')
+data.setCell(2, 3, 2190);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'loginTest')
+data.setCell(3, 2, 'com.qa.hubspot.tests.LoginPageTest')
+data.setCell(3, 3, 1363);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'userRegistrationTest')
+data.setCell(4, 2, 'com.qa.hubspot.tests.RegisterPageTest')
+data.setCell(4, 3, 1189);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'searchTest')
+data.setCell(5, 2, 'com.qa.hubspot.tests.AccountsPageTest')
+data.setCell(5, 3, 951);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'userRegistrationTest')
+data.setCell(6, 2, 'com.qa.hubspot.tests.RegisterPageTest')
+data.setCell(6, 3, 944);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'productInfoPageTitleTest_iMac')
+data.setCell(7, 2, 'com.qa.hubspot.tests.ProductInfoTest')
+data.setCell(7, 3, 672);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'verifyLoginPageTitleTest')
+data.setCell(8, 2, 'com.qa.hubspot.tests.LoginPageTest')
+data.setCell(8, 3, 559);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'verifyForgorPasswordLinkTest')
+data.setCell(9, 2, 'com.qa.hubspot.tests.LoginPageTest')
+data.setCell(9, 3, 210);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'verifyAccountsPageHeaderTest')
+data.setCell(10, 2, 'com.qa.hubspot.tests.AccountsPageTest')
+data.setCell(10, 3, 149);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'verifyMyAccountSectionListTest')
+data.setCell(11, 2, 'com.qa.hubspot.tests.AccountsPageTest')
+data.setCell(11, 3, 60);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'verifyMyAccountSectionTest')
+data.setCell(12, 2, 'com.qa.hubspot.tests.AccountsPageTest')
+data.setCell(12, 3, 52);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'accountsPageTitleTest')
+data.setCell(13, 2, 'com.qa.hubspot.tests.AccountsPageTest')
+data.setCell(13, 3, 25);
+window.suiteTableData['My_cart_Test_Automation_regressing_suite']= { tableData: data, tableDiv: 'times-div-My_cart_Test_Automation_regressing_suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 21 seconds</span>
+              <div id="times-div-My_cart_Test_Automation_regressing_suite">
+              </div> <!-- times-div-My_cart_Test_Automation_regressing_suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-My_cart_Test_Automation_regressing_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for My cart Test Automation regressing suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-My_cart_Test_Automation_regressing_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">1 ignored method</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.qa.hubspot.tests.ProductInfoTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">verifyProductInfoTest_MacBook</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-My_cart_Test_Automation_regressing_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.hubspot.tests.AccountsPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.hubspot.tests.LoginPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">1 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">verifyLoginPageTitleTest</span>
+                <span class="method-start">11528 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.hubspot.tests.AccountsPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">accountsPageSetUp</span>
+                <span class="method-start">11653 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.hubspot.tests.LoginPageTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">verifyForgorPasswordLinkTest</span>
+                <span class="method-start">12459 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">loginTest</span>
+                <span class="method-start">12676 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.hubspot.tests.AccountsPageTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">accountsPageTitleTest</span>
+                <span class="method-start">13571 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">accountsPageSetUp</span>
+                <span class="method-start">13601 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.hubspot.tests.LoginPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">14044 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.hubspot.tests.AccountsPageTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">verifyAccountsPageHeaderTest</span>
+                <span class="method-start">14557 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">accountsPageSetUp</span>
+                <span class="method-start">14710 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.hubspot.tests.RegisterPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">14891 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.hubspot.tests.AccountsPageTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyMyAccountSectionTest</span>
+                <span class="method-start">15897 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">accountsPageSetUp</span>
+                <span class="method-start">15963 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyMyAccountSectionListTest</span>
+                <span class="method-start">17474 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">accountsPageSetUp</span>
+                <span class="method-start">17542 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">searchTest</span>
+                <span class="method-start">18808 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.hubspot.tests.RegisterPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">registerPageSetUp</span>
+                <span class="method-start">19554 ms</span>
+              </div> <!-- configuration-class before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.hubspot.tests.AccountsPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">19763 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.hubspot.tests.ProductInfoTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">21618 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.hubspot.tests.RegisterPageTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">userRegistrationTest(devendra, pawar, dev@gmail.com, 1.23456789E9, dev@123, yes)</span>
+                <span class="method-start">22124 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">userRegistrationTest(nagendra, ragav, nag@gmail.com, 2.345678901E9, nag@@234, no)</span>
+                <span class="method-start">25403 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.hubspot.tests.ProductInfoTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">productInfoSetUp</span>
+                <span class="method-start">26373 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">verifyProductInfoTest_iMac</span>
+                <span class="method-start">27469 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.hubspot.tests.RegisterPageTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">userRegistrationTest(mittal, pal, mit@gmail.com, 9.861023456E9, mit@12, yes)</span>
+                <span class="method-start">27596 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">userRegistrationTest(lipi, misra, lipi@gmail.com, 1.23456678E8, l123, no)</span>
+                <span class="method-start">28791 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">29740 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.hubspot.tests.ProductInfoTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">productInfoPageTitleTest_iMac</span>
+                <span class="method-start">37619 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">38296 ms</span>
+              </div> <!-- configuration-test after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

@@ -1,3 +1,4 @@
+
 package com.qa.hubspot.base;
 
 import java.io.File;
@@ -12,9 +13,11 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.opera.OperaOptions;
 import org.openqa.selenium.safari.SafariDriver;
 
 import com.aventstack.extentreports.ExtentTest;
+import com.qa.hubspot.utils.OptionsManager;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 /**
@@ -27,6 +30,8 @@ public class BasePage {
 	
 	public WebDriver driver;
 	public static Properties prop;
+	public static String highlight;
+	public OptionsManager optionsManager;
 	public static ThreadLocal<WebDriver> tlDriver = new ThreadLocal<WebDriver>();
 /**
  * 	This method is used to initialize the browser on the basis of given browser
@@ -38,22 +43,25 @@ public class BasePage {
 	{
 		System.out.println("Browser value is"+ browser);
 		
+		highlight=prop.getProperty("hightlight");
+		optionsManager= new OptionsManager(prop);
+		
 		if(browser.equalsIgnoreCase("chrome")) {
 			
 			WebDriverManager.chromedriver().setup();
 			//driver=new ChromeDriver();
-			tlDriver.set(new ChromeDriver());
+			tlDriver.set(new ChromeDriver(optionsManager.getChromeOptions()));
 			
 		}else if(browser.equalsIgnoreCase("firefox")) {
 			
 			WebDriverManager.firefoxdriver().setup();
 			//driver=new FirefoxDriver();
-			tlDriver.set(new ChromeDriver());
+			tlDriver.set(new FirefoxDriver(optionsManager.getFirefoxOptions()));
 			
 		}else if(browser.equalsIgnoreCase("safari")) {
 			
 			//driver=new SafariDriver();
-			tlDriver.set(new ChromeDriver());
+			tlDriver.set(new SafariDriver());
 			
 		}else {
 			System.out.println("Please pass the correct browser value"+ browser);

@@ -10,6 +10,8 @@ import org.openqa.selenium.WebElement;
 import com.qa.hubspot.base.BasePage;
 import com.qa.hubspot.utils.Constants;
 import com.qa.hubspot.utils.ElementUtil;
+
+import io.qameta.allure.Step;
 /**
  * 
  * @author sagar
@@ -41,11 +43,15 @@ public class AccountsPage extends BasePage {
 	
 //3.Page Actions:Features or behaviour of the page in forms of methods
 	
+	
+	@Step("Getting Accounts page title......")
 	public String getAccountsPageTitle()
 	{
 		return elementUtil.getPageTitle(Constants.ACCOUNTS_PAGE_TITLE,10);
 	}
 	
+	
+	@Step("Getting Acoounts  page header value.....")
 	public String getHeaderValue()
 	{
 		if(  elementUtil.doIsDisplay(header))
@@ -55,12 +61,16 @@ public class AccountsPage extends BasePage {
 		return null;
 	}
 	
+	
+	@Step("Getting total number of Acoounts section.........")
 	public int getAccountSectionsCount()
 	{
 	  //return driver.findElements(accountSectionHeader).size();
 		return elementUtil.getElements(accountSectionHeader).size();
 	}
 	
+	
+	@Step("Getting Accounts page  account list......")
 	public List<String> getAccountSectionsList()
 	{
 		List <String> accountList =new ArrayList<>();
@@ -76,6 +86,8 @@ public class AccountsPage extends BasePage {
 		return accountList;
 	}
 	
+	
+	@Step("Searching a product name:{0}")
 	public boolean doSearch( String productName)
 	{
 		elementUtil.doSendKeys(searchText, productName);
@@ -89,7 +101,8 @@ public class AccountsPage extends BasePage {
 		
 		return false;
 	}	
-		
+	
+	@Step("Selecting a product with namefrom the result section :{0}")
 	public ProductInfoPage selectProductFromResults(String productname)
 	{
 		List<WebElement> productList = elementUtil.getElements(resultItems);
@@ -108,5 +121,3 @@ public class AccountsPage extends BasePage {
 		return new ProductInfoPage(driver);
 	}
 }	
-		
-	

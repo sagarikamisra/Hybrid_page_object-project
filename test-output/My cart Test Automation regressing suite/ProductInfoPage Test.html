@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>1/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sat Nov 13 07:39:17 CST 2021</td>
+<td>Started on:</td><td>Wed Nov 24 10:40:30 CST 2021</td>
 </tr>
-<tr><td>Total time:</td><td>17 seconds (17729 ms)</td>
+<tr><td>Total time:</td><td>8 seconds (8738 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -79,12 +79,8 @@ function toggleAllBoxes() {
 <td><div><pre>java.lang.AssertionError: expected [iMac] but found [Search - iMaciMac]
 	at com.qa.hubspot.tests.ProductInfoTest.productInfoPageTitleTest_iMac(ProductInfoTest.java:26)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1189775823", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1189775823'><pre>java.lang.AssertionError: expected [iMac] but found [Search - iMaciMac]
+... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace961433677", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace961433677'><pre>java.lang.AssertionError: expected [iMac] but found [Search - iMaciMac]
 	at org.testng.Assert.fail(Assert.java:99)
 	at org.testng.Assert.failNotEquals(Assert.java:1037)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
@@ -108,16 +104,21 @@ function toggleAllBoxes() {
 	at org.testng.TestRunner.privateRun(TestRunner.java:764)
 	at org.testng.TestRunner.run(TestRunner.java:585)
 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:425)
-	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:66)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:834)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.runSuites(TestNG.java:1069)
+	at org.testng.TestNG.run(TestNG.java:1037)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
 <td>0</td>
-<td>com.qa.hubspot.tests.ProductInfoTest@5c42d2b7</td></tr>
+<td>com.qa.hubspot.tests.ProductInfoTest@22a736d7</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -129,8 +130,8 @@ function toggleAllBoxes() {
 <tr>
 <td title='com.qa.hubspot.tests.ProductInfoTest.verifyProductInfoTest_iMac()'><b>verifyProductInfoTest_iMac</b><br>Test class: com.qa.hubspot.tests.ProductInfoTest</td>
 <td></td>
-<td>10</td>
-<td>com.qa.hubspot.tests.ProductInfoTest@5c42d2b7</td></tr>
+<td>3</td>
+<td>com.qa.hubspot.tests.ProductInfoTest@22a736d7</td></tr>
 </table><p>
 </body>
 </html>

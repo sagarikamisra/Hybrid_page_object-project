@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>3/2/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sat Nov 13 07:38:55 CST 2021</td>
+<td>Started on:</td><td>Wed Nov 24 10:40:07 CST 2021</td>
 </tr>
-<tr><td>Total time:</td><td>21 seconds (21548 ms)</td>
+<tr><td>Total time:</td><td>9 seconds (9575 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -79,12 +79,8 @@ function toggleAllBoxes() {
 <td><div><pre>java.lang.AssertionError: lists don&apos;t have the same size expected [4] but found [0]
 	at com.qa.hubspot.tests.AccountsPageTest.verifyMyAccountSectionListTest(AccountsPageTest.java:47)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace939169860", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace939169860'><pre>java.lang.AssertionError: lists don&apos;t have the same size expected [4] but found [0]
+... Removed 34 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1367775958", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1367775958'><pre>java.lang.AssertionError: lists don&apos;t have the same size expected [4] but found [0]
 	at org.testng.Assert.fail(Assert.java:99)
 	at org.testng.Assert.failNotEquals(Assert.java:1037)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
@@ -109,27 +105,28 @@ function toggleAllBoxes() {
 	at org.testng.TestRunner.privateRun(TestRunner.java:764)
 	at org.testng.TestRunner.run(TestRunner.java:585)
 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:425)
-	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:66)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:834)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.runSuites(TestNG.java:1069)
+	at org.testng.TestNG.run(TestNG.java:1037)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
 <td>0</td>
-<td>com.qa.hubspot.tests.AccountsPageTest@6475472c</td></tr>
+<td>com.qa.hubspot.tests.AccountsPageTest@546e61d5</td></tr>
 <tr>
 <td title='com.qa.hubspot.tests.AccountsPageTest.verifyMyAccountSectionTest()'><b>verifyMyAccountSectionTest</b><br>Test class: com.qa.hubspot.tests.AccountsPageTest</td>
 <td><div><pre>java.lang.AssertionError: expected [true] but found [false]
 	at com.qa.hubspot.tests.AccountsPageTest.verifyMyAccountSectionTest(AccountsPageTest.java:41)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace112643116", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace112643116'><pre>java.lang.AssertionError: expected [true] but found [false]
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace705801739", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace705801739'><pre>java.lang.AssertionError: expected [true] but found [false]
 	at org.testng.Assert.fail(Assert.java:99)
 	at org.testng.Assert.failNotEquals(Assert.java:1037)
 	at org.testng.Assert.assertTrue(Assert.java:45)
@@ -151,16 +148,21 @@ function toggleAllBoxes() {
 	at org.testng.TestRunner.privateRun(TestRunner.java:764)
 	at org.testng.TestRunner.run(TestRunner.java:585)
 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:425)
-	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:66)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:834)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.runSuites(TestNG.java:1069)
+	at org.testng.TestNG.run(TestNG.java:1037)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
 <td>0</td>
-<td>com.qa.hubspot.tests.AccountsPageTest@6475472c</td></tr>
+<td>com.qa.hubspot.tests.AccountsPageTest@546e61d5</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -173,17 +175,17 @@ function toggleAllBoxes() {
 <td title='com.qa.hubspot.tests.AccountsPageTest.accountsPageTitleTest()'><b>accountsPageTitleTest</b><br>Test class: com.qa.hubspot.tests.AccountsPageTest</td>
 <td></td>
 <td>0</td>
-<td>com.qa.hubspot.tests.AccountsPageTest@6475472c</td></tr>
+<td>com.qa.hubspot.tests.AccountsPageTest@546e61d5</td></tr>
 <tr>
 <td title='com.qa.hubspot.tests.AccountsPageTest.searchTest()'><b>searchTest</b><br>Test class: com.qa.hubspot.tests.AccountsPageTest</td>
 <td></td>
 <td>0</td>
-<td>com.qa.hubspot.tests.AccountsPageTest@6475472c</td></tr>
+<td>com.qa.hubspot.tests.AccountsPageTest@546e61d5</td></tr>
 <tr>
 <td title='com.qa.hubspot.tests.AccountsPageTest.verifyAccountsPageHeaderTest()'><b>verifyAccountsPageHeaderTest</b><br>Test class: com.qa.hubspot.tests.AccountsPageTest</td>
 <td></td>
 <td>0</td>
-<td>com.qa.hubspot.tests.AccountsPageTest@6475472c</td></tr>
+<td>com.qa.hubspot.tests.AccountsPageTest@546e61d5</td></tr>
 </table><p>
 </body>
 </html>

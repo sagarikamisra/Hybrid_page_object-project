@@ -21,20 +21,30 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import com.qa.hubspot.base.BasePage;
+
 import net.bytebuddy.asm.Advice.OffsetMapping.ForOrigin.Renderer.ForReturnTypeName;
 
 public class ElementUtil {
 
 	
 	private WebDriver driver;
+	private JavaScriptUtils jUtils;
 
 	public ElementUtil(WebDriver driver) {
 		this.driver = driver;
+		jUtils=new JavaScriptUtils(this.driver);
 		
 	}
 
 	public WebElement getElement(By locator) {
-		return driver.findElement(locator);
+		
+		WebElement element=driver.findElement(locator);
+		
+		if (BasePage.highlight.equals("true")) {
+			jUtils.flash(element);
+		}
+		return element;
 	}
 
 	public List<WebElement> getElements(By locator) {
@@ -322,6 +332,3 @@ public class ElementUtil {
 	}
 
 }
-
-
-

@@ -1,7 +1,9 @@
-package com.qa.hubspot.testListners;
+package com.qa.hubspot.testListner;
+
+
+
 
 import java.io.IOException;
-
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
@@ -12,15 +14,11 @@ import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 
-
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.MediaEntityBuilder;
-import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
-import com.aventstack.extentreports.reporter.configuration.ChartLocation;
-import com.aventstack.extentreports.reporter.configuration.Theme;
+import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.qa.hubspot.base.BasePage;
-
 
 public class ExtentReportListener extends BasePage implements ITestListener {
 
@@ -45,24 +43,16 @@ public class ExtentReportListener extends BasePage implements ITestListener {
 			}
 		}
 		
-		
-		ExtentHtmlReporter htmlReporter = new ExtentHtmlReporter(OUTPUT_FOLDER + FILE_NAME);
-		
-		htmlReporter.config().setDocumentTitle("OpenCart Test Automation"); // Tile of report
-		htmlReporter.config().setReportName("Functional Test Automation Report"); // name of the report
-		htmlReporter.config().setTestViewChartLocation(ChartLocation.TOP); //location of the chart
-		htmlReporter.config().setTheme(Theme.STANDARD);
-		
-		
-		extent=new ExtentReports();
-		
-		extent.attachReporter(htmlReporter);
-		//extent.setReportUserManualConfiguration(true);
-		extent.setSystemInfo("Host name","localhost");
-		extent.setSystemInfo("Environemnt","QA");
-		extent.setSystemInfo("user","sagarika");
-		
-		return extent;
+		extentReports = new ExtentReports();
+		ExtentSparkReporter reporter = new ExtentSparkReporter(OUTPUT_FOLDER + FILE_NAME);
+		reporter.config().setReportName("Automation Test Results");
+		extentReports.attachReporter(reporter);
+		extentReports.setSystemInfo("System", "MAC");
+		extentReports.setSystemInfo("Author", "Naveen AutomationLabs");
+		extentReports.setSystemInfo("Build#", "1.1");
+
+
+		return extentReports;
 	}
 
 	public synchronized void onStart(ITestContext context) {
@@ -126,7 +116,3 @@ public class ExtentReportListener extends BasePage implements ITestListener {
 	}
 
 }
-
-
-
-

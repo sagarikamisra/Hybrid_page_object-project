@@ -8,6 +8,7 @@ import com.qa.hubspot.base.BasePage;
 import com.qa.hubspot.utils.Constants;
 import com.qa.hubspot.utils.ElementUtil;
 
+import io.qameta.allure.Step;
 import net.bytebuddy.asm.Advice.OffsetMapping.ForOrigin.Renderer.ForReturnTypeName;
 
 public class LoginPage extends BasePage{
@@ -33,18 +34,24 @@ public class LoginPage extends BasePage{
 	}
 	// page actions:features (Beahaviour of the page) of in the forms of methods:
 	
+	
+	@Step("Getting login page title......")
 	public  String getLoginPageTitle()
 	{
 		
 		return elementUtil.getPageTitle(Constants.LOGIN_PAGE_TITLE,10);
 	}
 	
+	
+	@Step("Checking Forgot password link is present or not.......")
 	public boolean isForgotPwdLinkExist()
 	{
 		return elementUtil.doIsDisplay(forgotPwdLink);
 		
 	}	
 	
+	
+	@Step("Long in with username:{0} and password:{1}")
 	public AccountsPage doLogin(String un,String pwd)
 	{
 		System.out.println("Login with :"+un + "and" + pwd);
@@ -61,6 +68,8 @@ public class LoginPage extends BasePage{
 		
 	}
 	
+	
+	@Step("Navigating to register page........")
 	public Registerpage navigateToRegisterPage()
 	{
 		elementUtil.doClick(registerLink);
